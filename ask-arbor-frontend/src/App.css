@@ -1,0 +1,111 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #6a0572, #120078, #1d2671);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+}
+
+.container {
+  max-width: 900px; /* Larger container */
+  width: 90%;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(15px);
+  color: #fff;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 4rem; /* Larger header */
+  font-weight: bold;
+  color: #ff6f61;
+  text-shadow: 0px 5px 15px rgba(255, 111, 97, 0.7);
+}
+
+.form-section {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form-section input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem; /* Larger input */
+  border-radius: 30px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  margin-bottom: 20px;
+  outline: none;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.form-section input[type="text"]:focus {
+  box-shadow: 0px 10px 30px rgba(255, 111, 97, 0.5);
+  transform: translateY(-3px);
+}
+
+.form-section button {
+  padding: 15px 50px; /* Larger button */
+  background: linear-gradient(135deg, #ff6161, #d33f49);
+  border: none;
+  color: #fff;
+  font-size: 1.2rem; 
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-section button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 15px 40px rgba(211, 63, 73, 0.7);
+}
+
+.response-section {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  word-wrap: break-word;
+}
+
+.response-title {
+  font-size: 2.5rem; /* Larger response title */
+  margin-bottom: 20px;
+  color: #ff6f61;
+  text-align: center;
+  text-shadow: 0px 5px 10px rgba(255, 111, 97, 0.5);
+}
+
+.response-content {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1.2rem; 
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  white-space: pre-wrap; 
+  overflow-y: auto; 
+  max-height: 400px; 
+}
