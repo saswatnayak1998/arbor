@@ -63,7 +63,7 @@ def improve_query(query: str) -> str:
         prompt = (
             f"Improve the following query by adding context, clarification, or relevant details based on the document "
             f"which contains construction equipment information (section can be product_catalog, technical_details, "
-            f"price_history, or alternatives, etc.) to make it more precise for RAG Application:\n\n"
+            f"price_history, and material alternatives, etc.) to make it more precise for RAG Application:\n\n"
             f"Original Query: {query}\n\n"
             f"Improved Query:"
         )
@@ -78,7 +78,7 @@ def improve_query(query: str) -> str:
         )
         improved_query = response['choices'][0]['message']['content'].strip()
         logger.info(f"Improved Query: {improved_query}")
-        return improved_query
+        return query
     except Exception as e:
         logger.error(f"Error improving query: {e}")
         return query  # Fallback to original query if improvement fails
@@ -105,6 +105,7 @@ def extract_response_components(query: str, documents: list):
     necc_docs = "\n\n".join([json.dumps(doc) for doc in documents])
     prompt = (
         f"You are a helpful assistant for answering structured queries. Always respond with pure JSON only, without any additional formatting such as Markdown or enclosing your output in backticks.\n\n"
+        f"If the {query} wants an alternative or other options for something, then make sure to look at material_alternatives section.\n\n"
         f"Given the following query and context, provide a structured response with these components:\n\n"
         f"Query: {query}\n\n"
         f"Context:\n{necc_docs}\n\n"

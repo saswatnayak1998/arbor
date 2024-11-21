@@ -110,3 +110,11 @@ npm start  #start the frontend server
   This way, the dense data is broken down into smaller chunks that can be converted into vectors and easily retrievable for RAG.
 
   When breaking down material_alternatives, I made sure to include the `primary_product_id` in each chunk so that it can be linked back to the product_catalog.
+
+- Here are some examples of some complex queries and answers:
+
+  ![](./chatbot_results/proof1.png)
+
+  ![](./chatbot_results/proof2.png)
+
+  ![](./chatbot_results/proof3.png)

@@ -125,12 +125,12 @@ body {
   font-size: 1rem;
   color: #fff;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  white-space: pre-wrap; /* Preserve formatting */
-  overflow-y: auto; /* Scroll for long content */
+  white-space: pre; /* Preserve formatting and prevent wrapping */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: auto; /* Enable horizontal scrolling */
   max-height: 300px; /* Limit content height */
   width: 100%; /* Ensure full width */
 }
-
 .error-section {
   margin-top: 10px;
   color: #ff6f61;
