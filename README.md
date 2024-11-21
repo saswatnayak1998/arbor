@@ -1,6 +1,6 @@
 # Ask Arbor: AI-Powered Query System
 
-**Ask Arbor** is an AI-powered query system designed for efficient retrieval and presentation of structured responses from a construction-related dataset. This project combines a **FastAPI** backend, a **React** frontend, and **FAISS** for vector-based semantic search.
+**Ask Arbor** is an AI-powered query system designed for efficient retrieval and presentation of structured responses from a construction-related dataset(NoSQL). This project combines a **FastAPI** backend, a **React** frontend, and **FAISS** for vector-based semantic search.
 
 ---
 
@@ -57,8 +57,11 @@ This ensures the data is logically organized and optimized for semantic search w
 
 ### Backend Setup
 
-1. **Clone the repository**:
+1. **How to run it?**:
    ```bash
-   git clone <repository-url>
-   cd <repository-folder>
+   git clone https://github.com/saswatnayak1998/arbor.git
+   python fastApi_backend.py    #start the backend server
+   cd ask-arbor-frontend
+   npm install
+   npm start  #start the frontend server
    ```
