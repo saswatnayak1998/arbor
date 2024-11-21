@@ -120,7 +120,7 @@ def extract_response_components(query: str, documents: list):
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             messages=[
-                {"role": "system", "content": "You are a helpful assistant for Arbor Home, developed by Arbor Home."},
+                {"role": "system", "content": "You are a helpful assistant for Arbor Home, developed by Arbor Home. Be professional in the way you answer and do not entertain any questions which are not in the context"},
                 {"role": "user", "content": prompt}
             ],
             max_tokens=500,

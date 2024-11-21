@@ -67,7 +67,7 @@ npm install
 npm start  #start the frontend server
 ```
 
-**Challenges**:
+## Challenges
 
 - The dataset is in NoSQL format, with dense information like price history, there are relations too between differnet entries. For example, the material_alternatives section is linked with product_catalog so it was challenging to convert them into vectors for a RAG Application.
 

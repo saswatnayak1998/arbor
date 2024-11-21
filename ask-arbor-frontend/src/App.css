@@ -24,7 +24,7 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   width: 800px; /* Fixed width instead of percentage */
   height: 600px; /* Fixed container height */
   background: rgba(0, 0, 0, 0.8);
