@@ -111,7 +111,7 @@ npm start  #start the frontend server
 
   When breaking down material_alternatives, I made sure to include the `primary_product_id` in each chunk so that it can be linked back to the product_catalog.
 
-- Here are some examples of some complex queries and answers:
+- Here are some examples of some complex queries which would have required us to query a NoSQL db, and answers(Which are corect):
 
   ![](./chatbot_results/proof1.png)
 
