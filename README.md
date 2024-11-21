@@ -55,13 +55,47 @@ This ensures the data is logically organized and optimized for semantic search w
 
 ## Setup Instructions
 
-### Backend Setup
+### How to run it?
 
-1. **How to run it?**:
-   ```bash
-   git clone https://github.com/saswatnayak1998/arbor.git
-   python fastApi_backend.py    #start the backend server
-   cd ask-arbor-frontend
-   npm install
-   npm start  #start the frontend server
-   ```
+**Steps**:
+
+```bash
+git clone https://github.com/saswatnayak1998/arbor.git
+python fastApi_backend.py    #start the backend server
+cd ask-arbor-frontend
+npm install
+npm start  #start the frontend server
+```
+
+**Challenges**:
+
+- The dataset is in NoSQL format, with dense information like price history, there are relations too between differnet entries. For example, the material_alternatives section is linked with product_catalog so it was challenging to convert them into vectors for a RAG Application.
+
+- To resolve this, I changed the structure of the dataset to make it into smaller chunks.
+  For example,
+  product_catalog:{
+  id: "LUM-2x4-8-PT",
+  category: "Lumber",
+  name: "Pressure Treated Lumber 2x4x8",
+  manufacturer: "TimberTech Pro",
+  specifications: {
+  dimensions: "1.5\" x 3.5\" x 96\"",
+  grade: "Construction Grade",
+  }
+  }
+  The above thing will be broken down into two smaller chunks
+  product_catalog:{
+  id: "LUM-2x4-8-PT",
+  category: "Lumber",
+  name: "Pressure Treated Lumber 2x4x8",
+  manufacturer: "TimberTech Pro",
+  },
+  product_catalog:{
+  id: "LUM-2x4-8-PT",
+  category: "Lumber",
+  name: "Pressure Treated Lumber 2x4x8",
+  specifications: {
+  dimensions: "1.5\" x 3.5\" x 96\"",
+  grade: "Construction Grade",
+  }
+  }
