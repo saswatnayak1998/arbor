@@ -109,7 +109,7 @@ def create_faiss_index(data, index_file, metadata_file):
 
 def main():
     # Load the JSON data
-    with open("pretty_data.json", "r") as f:
+    with open("data/pretty_data.json", "r") as f:
         data = json.load(f)
 
     # Define file paths

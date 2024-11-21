@@ -38,8 +38,8 @@ REDIS_DB = 0
 cache = redis.StrictRedis(host=REDIS_HOST, port=REDIS_PORT, db=REDIS_DB, decode_responses=True)
 
 # Constants
-INDEX_FILE = "arbor_faiss.index"
-METADATA_FILE = "arbor_metadata.json"
+INDEX_FILE = "data/arbor_faiss.index"
+METADATA_FILE = "data/arbor_metadata.json"
 
 # Load FAISS index and metadata
 try:
