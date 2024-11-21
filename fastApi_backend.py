@@ -55,33 +55,7 @@ except Exception as e:
 embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
 
 
-def improve_query(query: str) -> str:
-    """
-    Use GPT-3.5/4 to improve the user's query by adding context or clarification.
-    """
-    try:
-        prompt = (
-            f"Improve the following query by adding context, clarification, or relevant details based on the document "
-            f"which contains construction equipment information (section can be product_catalog, technical_details, "
-            f"price_history, and material alternatives, etc.) to make it more precise for RAG Application:\n\n"
-            f"Original Query: {query}\n\n"
-            f"Improved Query:"
-        )
-        response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
-            messages=[
-                {"role": "system", "content": "You are a helpful assistant that improves user queries."},
-                {"role": "user", "content": prompt}
-            ],
-            max_tokens=50,
-            temperature=0.3
-        )
-        improved_query = response['choices'][0]['message']['content'].strip()
-        logger.info(f"Improved Query: {improved_query}")
-        return query
-    except Exception as e:
-        logger.error(f"Error improving query: {e}")
-        return query  # Fallback to original query if improvement fails
+
 
 
 def get_top_k_documents(query: str, k: int):
@@ -167,8 +141,7 @@ async def process_query(request: Request):
             logger.info(f"Cache hit for query: {query}")
             return JSONResponse(content=json.loads(cached_response))
 
-        improved_query = improve_query(query)
-        top_documents = get_top_k_documents(improved_query, k=6)
+        top_documents = get_top_k_documents(query, k=6)
         if not top_documents:
             raise HTTPException(status_code=404, detail="No relevant documents found")
 
