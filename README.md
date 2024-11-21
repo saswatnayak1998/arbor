@@ -1,6 +1,6 @@
 # Ask Arbor: AI-Powered Query System
 
-**Ask Arbor** is an AI-powered query system designed for efficient retrieval and presentation of structured responses from a construction-related dataset(NoSQL). This project combines a **FastAPI** backend, a **React** frontend, and **FAISS** for vector-based semantic search.
+**Ask Arbor** is an AI-powered query system designed for efficient retrieval and presentation of structured responses from a construction-related dataset(NoSQL). This project combines a **FastAPI** backend, a **React** frontend, and **FAISS** for vector-based semantic search. Demo: https://drive.google.com/file/d/1ymz6RLxcfIXCPx69wIxcH7M_GfthR4sh/view?usp=sharing
 
 ---
 

@@ -11,37 +11,30 @@ import os
 import logging
 import redis
 
-# Load environment variables
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-# Initialize FastAPI app
 app = FastAPI()
 
-# CORS configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Replace "*" with specific origins if needed
+    allow_origins=["*"],  
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# Logging configuration
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Redis configuration
 REDIS_HOST = "localhost"
 REDIS_PORT = 6379
 REDIS_DB = 0
 cache = redis.StrictRedis(host=REDIS_HOST, port=REDIS_PORT, db=REDIS_DB, decode_responses=True)
 
-# Constants
 INDEX_FILE = "data/arbor_faiss.index"
 METADATA_FILE = "data/arbor_metadata.json"
 
-# Load FAISS index and metadata
 try:
     index = faiss.read_index(INDEX_FILE)
     with open(METADATA_FILE, "r") as f:
@@ -51,7 +44,6 @@ except Exception as e:
     metadata = []
     index = None
 
-# Load embedding model
 embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
 
 
@@ -135,7 +127,6 @@ async def process_query(request: Request):
         if not query:
             raise HTTPException(status_code=400, detail="Query is required")
 
-        # Check if the response is already cached
         cached_response = cache.get(query)
         if cached_response:
             logger.info(f"Cache hit for query: {query}")
