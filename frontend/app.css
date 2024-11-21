@@ -1,0 +1,117 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #6a0572, #120078, #1d2671);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto; /* Allow scrolling */
+  }
+  
+  .container {
+    max-width: 800px;
+    width: 90%;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(15px);
+    color: #fff;
+    overflow-y: auto; /* Allow scrolling within the container */
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #ff6f61;
+    text-shadow: 0px 5px 15px rgba(255, 111, 97, 0.7);
+  }
+  
+  .form-section {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .form-section input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    margin-bottom: 20px;
+    outline: none;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .form-section input[type="text"]:focus {
+    box-shadow: 0px 10px 30px rgba(255, 111, 97, 0.5);
+    transform: translateY(-3px);
+  }
+  
+  .form-section button {
+    padding: 15px 40px;
+    background: linear-gradient(135deg, #ff6161, #d33f49);
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .form-section button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  .form-section button:hover:enabled {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 30px rgba(211, 63, 73, 0.7);
+  }
+  
+  .response-section {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    word-wrap: break-word;
+    text-align: left;
+  }
+  
+  .response-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff6f61;
+    text-align: center;
+    text-shadow: 0px 5px 10px rgba(255, 111, 97, 0.5);
+  }
+  
+  .response-content {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    white-space: pre-wrap; /* Preserve formatting */
+    overflow-y: auto; /* Enable scroll for long responses */
+    max-height: 400px; /* Limit response box height */
+  }
+  

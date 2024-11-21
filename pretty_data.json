@@ -1,0 +1,232 @@
+{
+    "product_catalog": [
+        {
+            "id": "LUM-2x4-8-PT",
+            "category": "Lumber",
+            "name": "Pressure Treated Lumber 2x4x8",
+            "manufacturer": "TimberTech Pro",
+            "specifications": {
+                "dimensions": "1.5\" x 3.5\" x 96\"", 
+                "grade": "Construction Grade",
+                "species": "Southern Yellow Pine",
+                "treatment": "Pressure Treated",
+                "moisture_content": "19% or less",
+                "weight_per_piece": "12.5 lbs",
+                "treatment_retention": "0.40 pcf",
+                "grade_stamp": "SPIB",
+                "use_category": "UC4A - Ground Contact"
+            },
+            "applications": [
+                "Ground contact applications",
+                "Deck framing",
+                "General construction",
+                "Outdoor structures"
+            ],
+            "technical_details": {
+                "bending_strength": "875-1,200 psi",
+                "modulus_of_elasticity": "1,400,000 psi",
+                "fastener_requirements": "Hot-dipped galvanized or stainless steel",
+                "installation_temperature": "40°F to 90°F",
+                "warranty": "25 years limited"
+            },
+            "price_history": [
+                {"date": "2024-01-01", "price": 8.97},
+                {"date": "2024-02-01", "price": 9.25},
+                {"date": "2024-03-01", "price": 8.89}
+            ],
+            "current_stock": {
+                "san_francisco": 1200,
+                "los_angeles": 850,
+                "seattle": 950
+            }
+        },
+        {
+            "id": "PLY-CDX-23/32",
+            "category": "Plywood",
+            "name": "CDX Plywood 23/32\" 4x8",
+            "manufacturer": "PlyPro Industries",
+            "specifications": {
+                "dimensions": "23/32\" x 48\" x 96\"",
+                "grade": "CDX",
+                "material": "Softwood",
+                "core_type": "Veneer",
+                "face_grade": "C",
+                "back_grade": "D",
+                "weight_per_sheet": "52 lbs",
+                "thickness_tolerance": "+/- 1/32\""
+            },
+            "applications": [
+                "Roof sheathing",
+                "Wall sheathing",
+                "Subflooring",
+                "General construction"
+            ],
+            "technical_details": {
+                "span_rating": "24/16",
+                "strength_axis": "48\" direction",
+                "water_resistance": "Exposure 1",
+                "flame_spread_rating": "Class C",
+                "formaldehyde_emission": "PS 1-09 compliant"
+            },
+            "price_history": [
+                {"date": "2024-01-01", "price": 45.99},
+                {"date": "2024-02-01", "price": 43.75},
+                {"date": "2024-03-01", "price": 44.50}
+            ]
+        },
+        {
+            "id": "OSB-716-4x8",
+            "category": "Engineered Wood",
+            "name": "OSB Sheathing 7/16\" 4x8",
+            "manufacturer": "StructureWood",
+            "specifications": {
+                "dimensions": "7/16\" x 48\" x 96\"",
+                "grade": "Structural 1",
+                "material": "Oriented Strand Board",
+                "core_type": "Layered Strands",
+                "face_grade": "Standard",
+                "weight_per_sheet": "45 lbs",
+                "thickness_tolerance": "+/- 1/32\""
+            },
+            "applications": [
+                "Wall sheathing",
+                "Roof decking",
+                "Structural panels",
+                "Subflooring"
+            ],
+            "technical_details": {
+                "span_rating": "24/16",
+                "strength_axis": "8' direction",
+                "water_resistance": "Exposure 1",
+                "flame_spread_rating": "Class C",
+                "formaldehyde_emission": "CARB Phase 2 compliant"
+            },
+            "price_history": [
+                {"date": "2024-01-01", "price": 22.99},
+                {"date": "2024-02-01", "price": 21.75},
+                {"date": "2024-03-01", "price": 23.50}
+            ]
+        }
+    ],
+
+    "technical_documents": [
+        {
+            "id": "TD-001",
+            "product_id": "LUM-2x4-8-PT",
+            "title": "Pressure Treated Lumber Installation Guide",
+            "content": "Pressure Treated Lumber Installation Guidelines\n\n1. Storage and Handling\n- Store lumber off the ground\n- Keep material dry and covered\n- Allow wood to acclimate to local conditions\n\n2. Cutting and Installation\n- Always wear appropriate PPE\n- Seal cut ends with preservative\n- Use appropriate fasteners\n- Maintain proper ventilation\n\n3. Fastener Requirements\n- Use hot-dipped galvanized or stainless steel fasteners\n- Minimum coating requirement G-185\n- Do not use standard steel or aluminum fasteners\n\n4. Recommended Applications\n- Ground contact applications\n- Deck framing\n- Fence posts\n- Outdoor structures\n\n5. Safety Considerations\n- Wear dust mask when cutting\n- Work in ventilated area\n- Clean up sawdust\n- Dispose of waste properly"
+        },
+        {
+            "id": "TD-002",
+            "product_id": "OSB-716-4x8",
+            "title": "OSB Installation and Best Practices",
+            "content": "OSB Installation Guidelines\n\n1. Storage and Handling\n- Store panels flat and supported\n- Protect from weather exposure\n- Allow for proper acclimation\n\n2. Installation Guidelines\n- Use proper spacing for expansion\n- Install with long dimension perpendicular to supports\n- Use appropriate fastener schedule\n- Maintain proper edge distance\n\n3. Moisture Management\n- Install with proper drainage planes\n- Use appropriate vapor barriers\n- Ensure proper ventilation\n- Address any water exposure promptly\n\n4. Common Applications\n- Wall sheathing installation\n- Roof decking procedures\n- Subflooring requirements\n\n5. Performance Considerations\n- Load capacity guidelines\n- Span ratings and limitations\n- Environmental factors"
+        }
+    ],
+
+    "building_codes": [
+        {
+            "code_id": "IBC-2021-2304",
+            "title": "General Construction Requirements - Wood",
+            "jurisdiction": "International Building Code",
+            "applicable_products": ["LUM-2x4-8-PT", "PLY-CDX-23/32", "OSB-716-4x8"],
+            "summary": "Wood Construction Guidelines - IBC 2021 Section 2304\n\n1. General Requirements\n- Design requirements for lumber grades\n- Load-bearing capacity specifications\n- Connection details and requirements\n2. Protection Against Decay\n- Required treatments for ground contact\n- Ventilation requirements\n- Moisture control measures\n3. Fire-Retardant Requirements\n- Treatment specifications\n- Testing requirements\n- Labeling requirements\n"
+        },
+        {
+            "code_id": "IRC-2021-R503",
+            "title": "Floor Sheathing Requirements",
+            "jurisdiction": "International Residential Code",
+            "applicable_products": ["PLY-CDX-23/32", "OSB-716-4x8"],
+            "summary": "Floor System Requirements - IRC 2021 Section R503\n\n1. Sheathing Requirements\n- Minimum thickness specifications\n- Span ratings and limitations\n- Installation requirements\n2. Fastening Schedule\n- Nail size and spacing\n- Edge distance requirements\n- Special conditions\n3. Moisture Protection\n- Vapor barriers\n- Ventilation requirements\n- Weather protection"
+        }
+    ],
+
+    "installation_guides": [
+        {
+            "guide_id": "IG-PT-001",
+            "product_id": "LUM-2x4-8-PT",
+            "title": "Deck Framing Installation Guide",
+            "content": "Deck Framing Installation Best Practices\n\nStep 1: Planning and Layout\n- Determine joist spacing (16\" O.C. typical)\n- Plan for proper drainage (1/4\" per foot slope)\n- Account for ventilation requirements\n\nStep 2: Material Preparation\n- Allow lumber to acclimate\n- Sort material for best pieces\n- Pre-cut to required lengths\n\nStep 3: Installation Process\n1. Install ledger board\n   - Use proper flashing\n   - Install with lag screws\n   - Maintain proper spacing\n\n2. Set support posts\n   - Minimum depth requirements\n   - Use proper concrete footings\n   - Ensure plumb installation\n\n3. Install beams and joists\n   - Use proper hangers\n   - Maintain level installation\n   - Install blocking as required"
+        },
+        {
+            "guide_id": "IG-OSB-001",
+            "product_id": "OSB-716-4x8",
+            "title": "Wall Sheathing Installation Guide",
+            "content": "Wall Sheathing Installation Guidelines\n\nStep 1: Preparation\n- Verify wall framing spacing and alignment\n- Check for proper blocking\n- Review local code requirements\n\nStep 2: Panel Layout\n- Start at corner of building\n- Maintain minimum edge distances\n- Stagger end joints\n\nStep 3: Installation\n1. Panel Attachment\n   - Use specified nailing pattern\n   - Maintain proper edge distance\n   - Install weather barrier properly\n\n2. Special Conditions\n   - Openings and penetrations\n   - Corners and intersections\n   - Expansion joints\n\n3. Weather Protection\n   - Install house wrap properly\n   - Flash all openings\n   - Ensure proper drainage"
+        }
+    ],
+
+    "safety_documents": [
+        {
+            "doc_id": "SD-PT-001",
+            "product_id": "LUM-2x4-8-PT",
+            "title": "Pressure Treated Lumber Safety Guide",
+            "content": "Safety Guidelines for Pressure Treated Lumber\n\n1. Personal Protective Equipment\n- Wear safety glasses\n- Use dust mask when cutting\n- Wear work gloves\n- Use hearing protection\n\n2. Safe Handling Practices\n- Proper lifting techniques\n- Clean work area\n- Proper tool selection\n- Ventilation requirements\n\n3. First Aid Measures\n- Eye contact procedures\n- Skin contact procedures\n- Inhalation procedures\n- Emergency contacts\n\n4. Environmental Considerations\n- Proper disposal methods\n- Recycling guidelines\n- Environmental impact\n- Storage requirements"
+        },
+        {
+            "doc_id": "SD-OSB-001",
+            "product_id": "OSB-716-4x8",
+            "title": "OSB Safety and Handling Guide",
+            "content": "Safety Guidelines for OSB Handling\n\n1. Personal Protection\n- Dust mask requirements\n- Eye protection guidelines\n- Proper work attire\n- Hand protection\n\n2. Material Handling\n- Safe lifting procedures\n- Panel transportation\n- Storage requirements\n- Tool safety\n\n3. Workplace Safety\n- Site cleanliness\n- Fall protection\n- Equipment maintenance\n- Emergency procedures\n\n4. Health Considerations\n- Dust exposure limits\n- Ventilation requirements\n- Chemical exposure guidelines\n- First aid procedures"
+        }
+    ],
+
+    "material_alternatives": [
+        {
+            "primary_product_id": "LUM-2x4-8-PT",
+            "alternatives": [
+                {
+                    "id": "COMP-2x4-8",
+                    "name": "Composite Lumber 2x4",
+                    "comparison": {
+                        "durability": "Higher",
+                        "cost": "300% more",
+                        "maintenance": "Lower",
+                        "sustainability": "Higher",
+                        "installation_difficulty": "Similar"
+                    }
+                },
+                {
+                    "id": "STEEL-2x4",
+                    "name": "Steel Stud 2x4",
+                    "comparison": {
+                        "durability": "Higher",
+                        "cost": "200% more",
+                        "maintenance": "Lower",
+                        "sustainability": "Lower",
+                        "installation_difficulty": "Higher"
+                    }
+                }
+            ]
+        },
+        {
+            "primary_product_id": "OSB-716-4x8",
+            "alternatives": [
+                {
+                    "id": "PLY-CDX-23/32",
+                    "name": "CDX Plywood",
+                    "comparison": {
+                        "durability": "Similar",
+                        "cost": "150% more",
+                        "maintenance": "Similar",
+                        "sustainability": "Similar",
+                        "installation_difficulty": "Similar"
+                    }
+                },
+                {
+                    "id": "ZIP-SYS-716",
+                    "name": "ZIP System Sheathing",
+                    "comparison": {
+                        "durability": "Higher",
+                        "cost": "200% more",
+                        "maintenance": "Lower",
+                        "sustainability": "Similar",
+                        "installation_difficulty": "Lower"
+                    }
+                }
+            ]
+        }
+    ]
+
+    
+}
