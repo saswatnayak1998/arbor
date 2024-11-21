@@ -73,6 +73,7 @@ npm start  #start the frontend server
 
 - To resolve this, I changed the structure of the dataset to make it into smaller chunks.
   For example,
+
   ```bash
   product_catalog:{
         id: "LUM-2x4-8-PT",
@@ -85,7 +86,9 @@ npm start  #start the frontend server
         }
   }
   ```
+
   The above thing will be broken down into two smaller chunks
+
   ```bash
   product_catalog:{
     id: "LUM-2x4-8-PT",
@@ -103,4 +106,7 @@ npm start  #start the frontend server
     }
   }
   ```
+
   This way, the dense data is broken down into smaller chunks that can be converted into vectors and easily retrievable for RAG.
+
+  When breaking down material_alternatives, I made sure to include the `primary_product_id` in each chunk so that it can be linked back to the product_catalog.
