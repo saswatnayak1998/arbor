@@ -73,29 +73,34 @@ npm start  #start the frontend server
 
 - To resolve this, I changed the structure of the dataset to make it into smaller chunks.
   For example,
+  ```bash
   product_catalog:{
-  id: "LUM-2x4-8-PT",
-  category: "Lumber",
-  name: "Pressure Treated Lumber 2x4x8",
-  manufacturer: "TimberTech Pro",
-  specifications: {
-  dimensions: "1.5\" x 3.5\" x 96\"",
-  grade: "Construction Grade",
+        id: "LUM-2x4-8-PT",
+        category: "Lumber",
+        name: "Pressure Treated Lumber 2x4x8",
+        manufacturer: "TimberTech Pro",
+        specifications: {
+        dimensions: "1.5\" x 3.5\" x 96\"",
+        grade: "Construction Grade",
+        }
   }
-  }
+  ```
   The above thing will be broken down into two smaller chunks
+  ```bash
   product_catalog:{
-  id: "LUM-2x4-8-PT",
-  category: "Lumber",
-  name: "Pressure Treated Lumber 2x4x8",
-  manufacturer: "TimberTech Pro",
+    id: "LUM-2x4-8-PT",
+    category: "Lumber",
+    name: "Pressure Treated Lumber 2x4x8",
+    manufacturer: "TimberTech Pro",
   },
   product_catalog:{
-  id: "LUM-2x4-8-PT",
-  category: "Lumber",
-  name: "Pressure Treated Lumber 2x4x8",
-  specifications: {
-  dimensions: "1.5\" x 3.5\" x 96\"",
-  grade: "Construction Grade",
+    id: "LUM-2x4-8-PT",
+    category: "Lumber",
+    name: "Pressure Treated Lumber 2x4x8",
+    specifications: {
+      dimensions: "1.5\" x 3.5\" x 96\"",
+      grade: "Construction Grade",
+    }
   }
-  }
+  ```
+  This way, the dense data is broken down into smaller chunks that can be converted into vectors and easily retrievable for RAG.
